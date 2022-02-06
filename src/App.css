@@ -1,0 +1,140 @@
+main {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	color: black;
+	font-size: 1rem;
+}
+
+.full-height {
+	height: 100%;
+  
+}
+
+.allList{
+  margin: 0 auto;
+  background-color: silver;
+  padding-bottom: 20px;
+  width: 700px;
+  box-shadow: 5px 5px 10px;
+}
+.item {
+	width: 80%;
+	margin: 0px auto;
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+  
+}
+
+@media only screen and (max-width: 390px) {
+	.item {
+		display: flex;
+		justify-content: space-evenly;
+		flex-flow: row wrap;
+	}
+}
+
+.item-name-added {
+	margin: 0 10px;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: nowrap;
+	padding: 5px;
+}
+
+.float-right-btn-add {
+	height: 40px;
+	width: 60px;
+	margin: 0 5px;
+	background-color: white;
+	border: 2px outset;
+	border-radius: 10px;
+}
+
+.float-right-btn-add:active {
+	border: inset;
+}
+
+.btn-delete-all {
+	display: block;
+	height: 40px;
+	width: 80px;
+	margin: 30px auto;
+	background-color: white;
+	border: 2px outset;
+	border-radius: 10px;
+}
+
+.btn-delete-all:active {
+	border: inset;
+}
+
+.name-input {
+	margin: 5px;
+	height: 40px;
+	min-width: 50%;
+	border: 2px inset;
+	border-radius: 10px;
+	background-color: white;
+	padding: 5px;
+}
+
+.number-input {
+	height: 40px;
+	width: 80px;
+	margin: 5px;
+	border: 2px inset;
+	border-radius: 10px;
+	background-color: white;
+}
+
+::placeholder {
+	color: black;
+	opacity: 0.7;
+}
+
+::ms-input-placeholder {
+	color: black;
+	opacity: 0.7;
+}
+
+.new-item-preview {
+	display: block;
+	width: fit-content;
+	margin: 10px auto;
+	word-break: break-all;
+}
+
+.new-item {
+	width: 90%;
+	padding: 10px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	word-break: break-all;
+  
+}
+
+.list-of-items {
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+  text-align: center;
+}
+
+.check {
+	margin: 0 10px;
+	min-width: 20px;
+	min-height: 20px;
+	box-shadow: 0 0 0 3px black;
+	border-radius: 50px;
+}
+
+.check:checked {
+	box-shadow: 0 0 0 3px #00ff00;
+}
